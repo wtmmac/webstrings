@@ -5,7 +5,7 @@ package webstrings
 // 单引号（'）
 // 双引号（"）
 // 反斜杠（\）
-func addslashes(str string) string {
+func Addslashes(str string) string {
 	tmpRune := []rune{}
 	strRune := []rune(str)
 	for _, ch := range strRune {
@@ -21,7 +21,7 @@ func addslashes(str string) string {
 }
 
 // stripslashes() 函数删除由 addslashes() 函数添加的反斜杠。
-func stripslashes(str string) string {
+func Stripslashes(str string) string {
 	dstRune := []rune{}
 	strRune := []rune(str)
 	strLenth := len(strRune)
